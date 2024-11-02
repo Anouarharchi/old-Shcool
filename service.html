@@ -6,25 +6,77 @@
     <link rel="stylesheet" href="game.css" >
     <link rel="icon" type="image/png" href="game-controller.png" >
     <title>Document</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+   <style>
+    a:hover {
+        color: hsl(202, 100%, 50%);
+    }
+    .pa {
+        text-align: center; 
+    }
+    .pa p, ul, li {
+        color: rgb(0, 0, 0);
+        text-shadow: 5px 5px 5px rgb(78, 26, 181);
+    }
+    .H {
+        text-align: center;
+        color: gold;
+        text-shadow: 5px 5px 5px rgb(137, 16, 167);
+    }
+    .h1formsg {
+        color: rgb(255, 251, 0);
+        font-family: Arial, Helvetica, sans-serif;
+        height: 500px;
+        width: 500px;
+        font-size: xx-large;
+    }
+    .aservise {
+        margin-top: 50px;
+        text-align: center; 
+    }
+    .aservise button {
+        margin: 0 auto;
+        display: block;
+    }
+    .contact-info {
+        text-align: center; 
+
+        margin: 0 auto; 
+        max-width: 600px; 
+    }
+   </style>
 </head>
 <body>
-    <header>
-        <a href="index.html" >
-            <img src="game-controller.png" height="80px" width="80px" id="img1" > 
-        </a > 
-        <nav>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="service.html">Services</a></li>
-              <li><a href="contactas.html">Contact</a></li>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html">
+            <img src="game-controller.png" height="80px" width="80px" id="img1" alt="Game Controller">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="service.html">Service</a>
+                </li>
             </ul>
-          </nav>
-    </header>
+        </div>
+    </nav>
+</header>
     
-</head>
-<body>
-    <div class="pa" >
+    <div class="pa">
         <h1 class="H">OLD SCHOOL</h1>
     
         <h2 class="H">Our Services</h2>
@@ -34,16 +86,21 @@
                 <p style="font-weight: bold;">play Games</p>
             </li>
             <li>
-                <h3 class="H" style=" padding-left:100px;">Service 2</h3>
-                <p style="font-weight: bold; padding-left:100px;">install Games</p>
+                <h3 class="H">Service 2</h3>
+                <p style="font-weight: bold;">install Games</p>
             </li>
-            <!-- Add more services as needed -->
         </ul>
     </div>
     
-        <h2 class="H" >Contact Us</h2>
-        <div><p style="font-weight: bold;">Have questions or want to learn more about our services? Contact us today!</p></div>
-        <div class="aservise"><a href="contactas.html" ><button href="contactas.html" >Contact Us</button></a></div>
-    
+        <h2 class="H">Contact Us</h2>
+        <div class="contact-info">
+            <p style="font-weight: bold; color: white;">Have questions or want to learn more about our services? Contact us today!</p>
+        </div>
+        <div class="aservise">
+            <a href="contact.html"><button>Contact Us</button></a>
+        </div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  
 </body>
 </html>

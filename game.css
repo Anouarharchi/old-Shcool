@@ -1,40 +1,50 @@
-body{
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url(game-background-4956017.jpg) ;
-    background-size:cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    text-align: center;
-    background-attachment: fixed;
-    
-    
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(game-background-4956017.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-attachment: fixed;
+  line-height: 1.6;
 }
 
+.navbar-nav {
+  margin: 0 auto;
+  display: table;
+  table-layout: fixed;
+}
+
+.nav-item {
+  display: table-cell;
+  text-align: center;
+}
 
 header {
-  background-color: rgb(24, 18, 80);
   color: #c3ff1f;
   padding: 1em;
   position: sticky;
   top: 0;
+  text-align: center;
+  background-color: hsl(256, 84%, 31%);
 }
-    
 
-#img1{
+#img1 {
   margin: auto;
   cursor: pointer;
-    
-    
+  animation: rotateImage 10s infinite linear;  
 }
+
 .login {
   max-width: 400px;
   margin: 100px auto;
   background-color: rgba(255, 255, 255, 0.5);
   padding: 20px;
   border-radius: 50px;
-  box-shadow: 4px 4px 5px  ;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
+  text-align: center; /* Center content inside login form */
 }
 
 input {
@@ -55,9 +65,13 @@ button {
   border-radius: 30px;
   cursor: pointer;
   background-color: rgb(21, 99, 23);
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the content of the button */
 }
+
 .Btn {
-  display:inline-flex;
+  display: inline-flex;
   align-items: center;
   justify-content: flex-start;
   width: 45px;
@@ -72,7 +86,6 @@ button {
   background-color: RGB(29, 185, 84);
 }
 
-/* plus sign */
 .sign {
   width: 100%;
   transition-duration: 0.3s;
@@ -87,9 +100,8 @@ button {
 
 .sign svg path {
   fill: black;
-  
 }
-/* text */
+
 .text {
   margin-left: 30px;
   position: absolute;
@@ -101,7 +113,7 @@ button {
   font-weight: 600;
   transition-duration: 0.3s;
 }
-/* hover effect on button width */
+
 .Btn:hover {
   width: 125px;
   border-radius: 40px;
@@ -113,14 +125,14 @@ button {
   transition-duration: 0.3s;
   padding-left: 20px;
 }
-/* hover effect button's text */
+
 .Btn:hover .text {
   opacity: 1;
   width: 70%;
   transition-duration: 0.3s;
   padding-right: 10px;
 }
-/* button click effect*/
+
 .Btn:active {
   transform: translate(2px, 2px);
 }
@@ -128,93 +140,88 @@ button {
 button:hover {
   background-color: #457ba0;
 }
+
 a {
   color: inherit;
   cursor: pointer;
   text-decoration: none;
 }
 
-.imag{
+.imag {
   margin: 5px;
   display: inline-block;
 }
 
-.des{
+.des {
   color: #c3ff1f;
-}
-#img1 {
-  animation: rotateImage 10s infinite linear;  
 }
 
 @keyframes rotateImage {
-from {
-  transform: rotate(0deg);
-}
-to {
-  transform: rotate(360deg);
-}
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
 }
 
 ul, li {
   margin: 0;
   padding: 0;
 }
-  
 
 body {
   font-family: 'Arial', sans-serif;
-  line-height: 1.6;
 }
-  
-  
+
 header {
-  color: #fff;  
+  color: #fff;
   padding: 10px 20px;
   text-align: center;
-  background-color: hsl(256, 84%, 31%); 
 }
-  
+
 nav {
-  margin-top: 10px; 
+  margin-top: 10px;
 }
-  
 
 ul {
   list-style-type: none;
 }
-  
-  
+
 li {
   margin-right: 20px;
-  display: inline-block; 
+  display: inline-block;
 }
-  
+
 a {
-  color: #fff; 
-  font-weight: bold; 
-  text-decoration: none; 
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
 }
-  
 
 a:hover {
   color: hsl(202, 100%, 50%);
 }
-.pa p,ul,li{
+
+.pa p, ul, li {
   color: rgb(0, 0, 0);
   text-shadow: 5px 5px 5px rgb(78, 26, 181);
 }
-.H{
+
+.H {
   text-align: center;
-            color: gold;
-            text-shadow: 5px 5px 5px rgb(137, 16, 167);
+  color: gold;
+  text-shadow: 5px 5px 5px rgb(137, 16, 167);
 }
-.h1formsg{
+
+.h1formsg {
   color: rgb(255, 251, 0);
   font-family: Arial, Helvetica, sans-serif;
   height: 500px;
   width: 500px;
   font-size: xx-large;
 }
-.aservise{
+
+.aservise {
   margin-top: 50px;
 }

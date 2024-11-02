@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game.css" >
+    <link rel="icon" type="image/png" href="game-controller.png" >
+    <title>Contact Old school</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+   
+</head>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            
+        }
+        h1 {
+            text-align: center;
+            color: gold;
+            text-shadow: 5px 5px 5px rgb(0, 0, 0);
+        }
+        p {
+            text-align: center;
+            margin-bottom: 20px;
+            color: rgb(0, 0, 0);
+            text-shadow: 5px 5px 5px rgb(78, 26, 181);
+        }
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            border: 1px solid black;
+           padding: 20px;
+           border-radius: 20px;
+           box-shadow: 4px 4px 4px black;
+           background-color: rgba(89, 57, 176, 0.5);
+        }
+        label{
+            display: block;
+            margin-bottom: 10px;
+            color: #000000;
+            text-shadow: 4px 4px 4px rgb(45, 25, 160);
+        }
+         input, textarea {
+            display: block;
+            margin-bottom: 10px;
+            
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+   <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html">
+            <img src="game-controller.png" height="80px" width="80px" id="img1" alt="Game Controller">
+        </a>
+
+        <!-- Toggler/collapsible Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="service.html">Service</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+    <h1>Contact Us</h1>
+
+    <p>Feel free to reach out to us with any questions, concerns, or feedback. We'd love to hear from you!</p>
+
+    <form action="contact.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+    
+        <input type="submit" value="Submit">
+    </form>
+    <!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+</body>
+</html>
